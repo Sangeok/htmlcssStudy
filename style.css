@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500&display=swap');
+
+/* 기본적으로 html에서 불필요한 부분이 없게 만든다.*/
+html, body {
+    margin : 0px;
+    padding : 0px;
+    width : 100%;
+    height : 100%;
+}
+
+a {
+    font-family: 'Unbounded', cursive;
+    text-decoration: none;
+    color : white;
+}
+
+/* wrapper class... */
+.wrapper {
+    display : flex;
+    flex-direction: column;
+    /* 부모가 준 공간의 height를 100% 쓰겠다는 의미 */
+    height : 100%;
+}
+
+.header {
+    position: absolute;
+    display : flex;
+    justify-content: space-between;
+    background-color: black;
+    width : 100%;
+    height : 7vh;
+}
+
+.navbar__menu { 
+    /* flexbox로 설정하여 menu에 대한 Main axis를 가로로 바꿈 */
+    display : flex;
+    list-style : none;
+}
+
+.navbar__menu li {
+    margin-left: 5%;
+}
+
+.navbar__icon {
+    display : flex;
+    list-style : none;
+    color : white;
+    margin-right : 5%;
+}
+
+.navbar__icon li {
+    padding-left : 20px;
+}
+
+.main__content {
+    display : flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.main__content img {
+    width : 100%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.img-container {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    height : 100vh;
+}
+
+.img-container2 {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container2 img {
+    height : 100%;
+}
+
+.main__text {
+    position: absolute;
+    color : white;
+}
+
+.main__text2 {
+    position: absolute;
+    color : white;
+    text-align: center;
+}
+
+footer {
+    
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- connecting to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study1</title>
+</head>
+
+<body>
+    
+    <div class = "wrapper">
+        <div class = "header">
+            <ul class = "navbar__menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Hope</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <ul class = "navbar__icon">
+                <li><span class="material-symbols-outlined">
+                    person
+                </span></li>
+                <li><span class="material-symbols-outlined">
+                    login
+                </span></li>
+                <li><span class="material-symbols-outlined">
+                    more_vert
+                </span></li>
+            </ul>
+        </div>
+        <div class = "main__content">
+            <div class="img-container">
+                <img src="">
+                <div class = "main__text">
+                    <h4>What is the favorite working...</h4>
+                </div>
+            </div>
+            <div class="img-container2">
+                <img src="">
+                <div class = "main__text2">
+                    <h4>About Us...</h4>
+                    <h4>우리는 나아갈 것이다.</h4>
+                    <h4>그 끝이 어디던지...</h4>
+                </div>
+            </div>
+            <footer class = "footer">
+                hihi
+            </footer>
+        </div>
+        <script type="text/javascript">
+            /* img-container의 img를 불러옴 */
+            $img1 = document.querySelector(".img-container > img");
+            $img2 = document.querySelector(".img-container2 > img");
+            let images = ['우주1.jpg','우주2.jpg','우주3.jpg','우주4.jpg'];
+            /* page loading시 images 배열에 있는 사진 중 하나를 main에 배치 */
+            setTimeout(function(){
+                let random1 = Math.floor(Math.random()*4);
+                let random2 = Math.floor(Math.random()*4);
+                while(random1==random2) {
+                    random2 = Math.floor(Math.random()*4);
+                }
+                $img1.src = `${images[random1]}`;
+                $img2.src = `${images[random2]}`;
+            }, 0);
+        </script>
+    </div>
+</body>
+</html>
