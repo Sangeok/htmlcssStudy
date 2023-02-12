@@ -1,3 +1,27 @@
+body, html {
+    padding : 0px;
+    margin : 0px;
+    color : white;
+}
+
+.wrapper {
+    display : flex;
+    flex-direction: column;
+    height: 100%;
+    width : 100%;
+}
+
 .hidden {
     display : none;
+}
+
+.backgroundImage {
+    display : flex;
+}
+
+.backgroundImage img{
+    height : 100vh;
+    width : 100%;
+    object-fit: cover;
+    
 }

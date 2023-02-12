@@ -13,14 +13,16 @@ function onLoginSubmit(event) {
     paintGreeting(username);
 }
 
+// 사용자 login시 해당 id와 Hello를 출력
 function paintGreeting(username) {
     greeting.innerHTML = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-
+// localStorage에 username 저장
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
+// 만약 localStorage에 저장된 id가 없을 시
 if(savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit",onLoginSubmit);
