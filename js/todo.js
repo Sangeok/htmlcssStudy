@@ -3,7 +3,7 @@ const toDoInput = document.querySelector(".todo-form input");
 const toDoList = document.querySelector(".todo-list");
 
 const TODOS_KEY = "todos";
-const HIDDEN_CLASSNAME = "hidden";
+// const HIDDEN_CLASSNAME = "hidden"; 이거 왜 추가하면 에러나지?;;
 
 let toDos = [];
 
@@ -20,7 +20,6 @@ function deleToDo(event) {
 }
 
 function paintTodo(newTodoObj) {
-    const savedUsername = localStorage.getItem(USERNAME_KEY);
     const li = document.createElement("li");
     const span = document.createElement("span");
     span.innerHTML = newTodoObj.text;
