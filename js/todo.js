@@ -3,6 +3,7 @@ const toDoInput = document.querySelector(".todo-form input");
 const toDoList = document.querySelector(".todo-list");
 
 const TODOS_KEY = "todos";
+const HIDDEN_CLASSNAME = "hidden";
 
 let toDos = [];
 
@@ -32,7 +33,6 @@ function paintTodo(newTodoObj) {
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
-
 }
 
 function handleToDoSubmit(event) {
@@ -47,6 +47,16 @@ function handleToDoSubmit(event) {
     paintTodo(newTodoObj);
     saveToDos();
 }
+
+// function checkLogIn() {
+//     const savedUsername = localStorage.getItem(USERNAME_KEY);
+//     if(savedUsername != null) {
+//         toDoForm.classList.remove(HIDDEN_CLASSNAME);
+//     }
+//     else {
+//         toDoForm.classList.add(HIDDEN_CLASSNAME);
+//     }
+// }
 
 toDoForm.addEventListener("submit",handleToDoSubmit);
 
