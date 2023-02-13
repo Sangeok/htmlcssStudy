@@ -19,6 +19,7 @@ function deleToDo(event) {
 }
 
 function paintTodo(newTodoObj) {
+    const savedUsername = localStorage.getItem(USERNAME_KEY);
     const li = document.createElement("li");
     const span = document.createElement("span");
     span.innerHTML = newTodoObj.text;

@@ -12,27 +12,36 @@
         <div class="backgroundImage">
             <img src="">
         </div>
-        
-        <form class="login-form">
-            <input
-                required
-                maxlength="15"
-                type="text" 
-                placeholder="Id"
-            />
-            <button>Log In</button>
-        </form>
-        <h2 class="clock">00:00:00</h2>
-        <h1 class="greeting hidden"></h1>
-        <form class="todo-form">
-            <input type="text" placeholder="Write a To do and Press the Enter." required/>
-        </form>
-        <ul class="todo-list"></ul>
-        <div class="quote">
-            <span></span>
-            <span></span>
+        <div class="header">
+            <div class="city">
+                <span>Region : </span>
+                <span></span>
+            </div>
+            <div class="weather">
+                <span>Weather : </span>
+                <span></span>
+            </div>
         </div>
-        <div class="weather">
+        <div class="main__content">
+            <div class = "main__time">
+                <h1 class="clock">00:00:00</h1>
+            </div>
+            <form class="login-form">
+                <input
+                    required
+                    maxlength="15"
+                    type="text" 
+                    placeholder="Id"
+                />
+                <button>Log In</button>
+            </form>
+            <h1 class="greeting hidden"></h1>
+            <form class="todo-form">
+                <input type="text" placeholder="What to do today?" required/>
+            </form>
+            <ul class="todo-list"></ul>
+        </div>
+        <div class="quote">
             <span></span>
             <span></span>
         </div>
