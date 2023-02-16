@@ -3,7 +3,10 @@
 body, html {
     padding : 0px;
     margin : 0px;
+    height : 100%;
     color : white;
+    /* 모든 문자에 대해 중앙으로 배치 */
+    text-align: center;
 }
 
 .wrapper {
@@ -30,13 +33,19 @@ body, html {
 
 .header {
     display : flex;
-    justify-content: space-between;
-    padding : 3%;
+    flex-direction: column;
     font-family: 'Unbounded', cursive;
+}
+
+.header__one {
+    display : flex;
+    justify-content: space-between;
+    padding : 3% 3% 0% 3%;
 }
 
 .main__content {
     display : flex;
+    flex : 1;
     flex-direction: column;
     align-items: center;
 }
@@ -47,5 +56,5 @@ body, html {
 }
 
 .quote {
-    
+    padding-bottom: 3%;
 }

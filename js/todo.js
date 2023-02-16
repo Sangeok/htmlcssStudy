@@ -47,16 +47,6 @@ function handleToDoSubmit(event) {
     saveToDos();
 }
 
-// function checkLogIn() {
-//     const savedUsername = localStorage.getItem(USERNAME_KEY);
-//     if(savedUsername != null) {
-//         toDoForm.classList.remove(HIDDEN_CLASSNAME);
-//     }
-//     else {
-//         toDoForm.classList.add(HIDDEN_CLASSNAME);
-//     }
-// }
-
 toDoForm.addEventListener("submit",handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);

@@ -13,20 +13,25 @@
             <img src="">
         </div>
         <div class="header">
-            <div class="city">
-                <span>Region : </span>
-                <span></span>
+            <div class="header__one">
+                <div class="city">
+                    <span>Region : </span>
+                    <span></span>
+                </div>
+                <div class="weather">
+                    <span>Weather : </span>
+                    <span></span>
+                </div>
             </div>
-            <div class="weather">
-                <span>Weather : </span>
-                <span></span>
+            <div class="header__two">
+                <h3 class="greeting hidden"></h1>
             </div>
         </div>
         <div class="main__content">
             <div class = "main__time">
                 <h1 class="clock">00:00:00</h1>
             </div>
-            <form class="login-form">
+            <form class="login-form hidden">
                 <input
                     required
                     maxlength="15"
@@ -35,7 +40,6 @@
                 />
                 <button>Log In</button>
             </form>
-            <h1 class="greeting hidden"></h1>
             <form class="todo-form">
                 <input type="text" placeholder="What to do today?" required/>
             </form>

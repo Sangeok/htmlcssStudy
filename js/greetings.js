@@ -7,6 +7,7 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     event.preventDefault();
+    // submit시 username이 결정됨
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY,username);
     loginForm.classList.add(HIDDEN_CLASSNAME);
