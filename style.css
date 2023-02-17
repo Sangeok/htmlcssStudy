@@ -6,7 +6,7 @@ body, html {
     height : 100%;
     color : white;
     /* 모든 문자에 대해 중앙으로 배치 */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .wrapper {
@@ -43,6 +43,10 @@ body, html {
     padding : 3% 3% 0% 3%;
 }
 
+.header__two {
+    text-align: center;
+}
+
 .main__content {
     display : flex;
     flex : 1;
@@ -52,11 +56,20 @@ body, html {
 
 .main__time {
     font-size : 1.883em;
-    padding-bottom : 3%;
+    padding-bottom : 2.4%;
 }
 
 .quote {
     padding-bottom: 3%;
+}
+
+.todo-list {
+    padding-left: 0px;
+}
+
+.todo-list li {
+    list-style: none;
+    
 }
 
 .todo-list button {
@@ -69,6 +82,10 @@ body, html {
     border: 0 solid black;
 }
 
+.login-form {
+    padding-bottom : 20px;
+}
+
 .todo-form input {
     width: 500px;
     height: 32px;
@@ -79,8 +96,4 @@ body, html {
     padding-left: 10px;
     background-color: rgb(233, 233, 233);
 
-}
-
-.todo-list li {
-    list-style: none;
 }
