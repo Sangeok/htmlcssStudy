@@ -6,7 +6,7 @@ body, html {
     height : 100%;
     color : white;
     /* 모든 문자에 대해 중앙으로 배치 */
-    /* text-align: center; */
+    text-align: center;
 }
 
 .wrapper {
@@ -41,10 +41,6 @@ body, html {
     display : flex;
     justify-content: space-between;
     padding : 3% 3% 0% 3%;
-}
-
-.header__two {
-    text-align: center;
 }
 
 .main__content {
