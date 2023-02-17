@@ -52,9 +52,35 @@ body, html {
 
 .main__time {
     font-size : 1.883em;
-    padding-bottom : 5%;
+    padding-bottom : 3%;
 }
 
 .quote {
     padding-bottom: 3%;
+}
+
+.todo-list button {
+    color : Red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* 뒷 배경을 부모와 같게 맞춰줌 */
+    background-color: transparent;
+    border: 0 solid black;
+}
+
+.todo-form input {
+    width: 500px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+
+}
+
+.todo-list li {
+    list-style: none;
 }
